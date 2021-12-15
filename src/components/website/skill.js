@@ -10,12 +10,19 @@ export default function Skill() {
     const [isSuccess, setIsSuccess] = useState(false);
 	const [isError, setIsError] = useState(false);
 
-
-      useEffect(() => {
-		
-        getSkills()
-
+    useEffect(() => {
+        let isMounted = true;
+        getSkills();
+        return () => {
+          isMounted = false;
+        };
     }, []);
+
+    //   useEffect(() => {
+		
+    //     getSkills()
+
+    // }, []);
 
 
 const getSkills = () => 

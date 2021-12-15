@@ -6,17 +6,26 @@ import DataService from "../dashboard/services/Service";
 
 export default function Experience() {
 
-	const [experience, setExperience] = useState('');
+	const [experience, setExperience] = useState([]);
     const [isSuccess, setIsSuccess] = useState(false);
 	const [isError, setIsError] = useState(false);
 
 
-      useEffect(() => {
+    //   useEffect(() => {
 		
-        getExperience()
+    //     getExperience()
 
-    }, []);
+    //     }, []);
 
+        useEffect(() => {
+            let isMounted = true;    
+            getExperience();
+          return () => {
+              isMounted = false;
+            };
+        }, []);
+
+        
 
 const getExperience = () => 
 {
@@ -24,7 +33,6 @@ const getExperience = () =>
 
     .then(result => {
         if(result.status== 200){
-
             setExperience(result.data.data)
             setIsSuccess(true)
         }

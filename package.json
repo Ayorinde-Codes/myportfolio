@@ -46,8 +46,7 @@
     "redux-promise": "^0.6.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4",
-    "xlsx": "^0.17.0",
-    "node-sass": "^4.12.0"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",

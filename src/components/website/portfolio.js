@@ -8,18 +8,21 @@ export default function Portfolio() {
 
   const [portfolio, setPortfolio] = useState('');
   const [categories, setCategories] = useState('');
-  const [singlePortfolio, setSinglePortfolio] = useState([]);
+  const [singlePortfolio, setSinglePortfolio] = useState('');
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
 
 
-    useEffect(() => {
-  
-      getPorfolio()
-      getCategory()
+  useEffect(() => {
+    let isMounted = true;
+    getCategory();
 
-  }, []);
+    getPorfolio();
+  return () => {
+      isMounted = false;
+    };
+}, []);
 
 
 const getPorfolio = () => 
@@ -66,9 +69,8 @@ const loadCategory = () => {
   var index = 1;
   return categories && categories.map(({ stack, description, image_url }) => {
       return (
-        
               <li key={index++}><a href="#" data-filter={`.${stack}`}> {stack} </a></li>
-      )
+            )
   })
 }
 
@@ -135,7 +137,7 @@ const loadPortfolio = () => {
   var index = 1;
 
   return portfolio && portfolio.map(({ id, name, category_id, stack, description, year_from, year_to, url, is_completed, categories  }) => {
-      return (
+      return (        
               <li key={index++} className={`${categories.stack} col-xs-6 col-sm-4 col-md-3 col-lg-3 addSpacingPortfolio`}>
                 <div className="lightCon"> 
                   <span className="hoverBox"> 
@@ -157,7 +159,7 @@ const loadPortfolio = () => {
 
 const loadModal = (name, stack, description, year_from, year_to, url, is_completed, categories) => {
 
-  setSinglePortfolio([{name, stack, description, year_from, year_to, url, is_completed, categories}])
+    setSinglePortfolio([{name, stack, description, year_from, year_to, url, is_completed, categories}])
 }
 
     return (

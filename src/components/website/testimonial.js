@@ -8,12 +8,14 @@ export default function Testimonial() {
     const [isSuccess, setIsSuccess] = useState(false);
 	const [isError, setIsError] = useState(false);
 
+
     useEffect(() => {
-		
-        getTestimonials()
-
+        let isMounted = true;    
+        getTestimonials();
+      return () => {
+          isMounted = false;
+        };
     }, []);
-
 
 const getTestimonials = () => 
 {
