@@ -1,0 +1,189 @@
+/*
+
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1. - NORMALIZE CSS
+ * 2. - GLOBAL STYLES
+ *      2.1 - General Styles
+ *      2.2 - Text Color
+ *      2.3 - Anchor
+ *      2.4 - Heading and Paragraph
+ * 
+ * 3. - COMPONENTS
+ *      3.1 - Preloader  
+ *      3.2 - Buttons  
+ *      3.3 - Box Icon 1
+ *      3.4 - Box Icon 2
+ *      3.5 - Box Image 1
+ *      3.6 - Box Image 2
+ *      3.7 - Box Image 3
+ *      3.8 - BOX TESTIMONY
+ *      3.9 - Box Team 2
+ *      3.10 - Box Statistic
+ *      3.11 - Box History
+ *      3.12 - Box Partners
+ *      3.13 - Panel Accordion
+ *      3.14 - Faq
+ *      3.15 - Pricing Table
+ *      3.16 - Career Tabs
+ *      3.17 - Box News
+ * 4. - LOGO & NAVIGATION
+ *      4.1 - Topbar 
+ *      4.2 - Navbar 
+ * 5. - HOME
+ *      5.1 - Banner
+ *      5.2 - Text Typing
+ * 6. - SECTION
+ *      6.1 Section - About
+ *      6.2 Section - Services
+ *      6.3 Section - Projects
+ *      6.4 Section - News
+ *      6.5 Section - Contact
+ *      6.6 Section - Features
+ *      6.7 Section - CTA
+ *      6.8 Section - Price
+ *      6.9 Section - Blog
+ *      6.10 Section - Timeline
+ *      6.11 Section - Testimonial
+ *      6.12 Section - Clients
+ *      6.13 Section - Video BG
+ *      6.14 Section - Contact and Map
+ * 7. - FOOTER 
+ * 8. - RESPONSIVE
+ * -----------------------------------------------------------------------------
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Montserrat:400,700,900|Yellowtail|Oswald:400,600,700');
+
+
+@font-face {
+  font-family: 'walls-webfont';
+  src: url('../fonts/walls-webfont.eot?51534236');
+  src: url('../fonts/walls-webfont.eot?51534236#iefix') format('embedded-opentype'),
+       url('../fonts/walls-webfont.woff2?51534236') format('woff2'),
+       url('../fonts/walls-webfont.woff?51534236') format('woff'),
+       url('../fonts/walls-webfont.ttf?51534236') format('truetype'),
+       url('../fonts/walls-webfont.svg?51534236#walls-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+//[class^="icon-"]:before, [class*=" icon-"]:before {
+.rsi{
+  font-family: "walls-webfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.rsi-walls-1:before { content: '\e813'; } /* '' */
+.rsi-walls-2:before { content: '\e800'; } /* '' */
+.rsi-walls-3:before { content: '\e801'; } /* '' */
+.rsi-walls-4:before { content: '\e802'; } /* '' */
+.rsi-walls-5:before { content: '\e803'; } /* '' */
+.rsi-walls-6:before { content: '\e804'; } /* '' */
+.rsi-walls-7:before { content: '\e805'; } /* '' */
+.rsi-walls-8:before { content: '\e806'; } /* '' */
+.rsi-walls-9:before { content: '\e807'; } /* '' */
+.rsi-walls-10:before { content: '\e808'; } /* '' */
+.rsi-walls-11:before { content: '\e809'; } /* '' */
+.rsi-walls-12:before { content: '\e80a'; } /* '' */
+.rsi-walls-13:before { content: '\e80b'; } /* '' */
+.rsi-walls-14:before { content: '\e80c'; } /* '' */
+.rsi-walls-15:before { content: '\e80d'; } /* '' */
+.rsi-walls-16:before { content: '\e80e'; } /* '' */
+.rsi-walls-17:before { content: '\e80f'; } /* '' */
+.rsi-walls-18:before { content: '\e810'; } /* '' */
+.rsi-walls-19:before { content: '\e811'; } /* '' */
+.rsi-walls-20:before { content: '\e812'; } /* '' */
+
+
+
+@import "variable.scss";
+
+/**
+ * 1. - NORMALIZE CSS
+ * -----------------------------------------------------------------------------
+ */
+ 
+@import "normalize.scss";
+
+/**
+ * 2. GLOBAL STYLES
+ * -----------------------------------------------------------------------------
+ */
+
+@import "global.scss";
+
+/**
+ * 3. - COMPONENTS
+ * -----------------------------------------------------------------------------
+ */
+@import "components.scss";
+
+/**
+ * 4. - LOGO & NAVIGATION
+ * -----------------------------------------------------------------------------
+ */
+@import "logo-nav.scss";
+
+/**
+ * 5. - HOME
+ * -----------------------------------------------------------------------------
+ */
+@import "home.scss";
+
+/**
+ * 6. - SECTION
+ * -----------------------------------------------------------------------------
+ */
+@import "section.scss";
+
+/**
+ * 7. - FOOTER
+ * -----------------------------------------------------------------------------
+ */
+@import "footer.scss";
+
+/**
+ * 8. - RESPONSIVE
+ * -----------------------------------------------------------------------------
+ */
+@import "responsive.scss";
+
+
+
+
+
+
