@@ -14,7 +14,7 @@ export default function AboutMe() {
                         </div>
                     
                     <h3>Ayorinde Akindemowo</h3>
-                    <h4 className="subHeading">Seniour Software Engineer</h4>
+                    <h4 className="subHeading">Senior Software Engineer</h4>
                     
                     <div id="description">
                         <p> 
