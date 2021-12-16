@@ -2953,6 +2953,11 @@ dl.hiw {
       margin-bottom:60px;
     }
     
+    .portfolioImg {
+      height: '150px' !important;
+      width: '300px' !important;
+    }
+    
   .full-height-spacer .section-heading {
     position: static;
     margin-bottom: 20px; } }
@@ -3391,6 +3396,11 @@ Education Style
 ------------------------------------------------------*/
 .protfolio {
 	margin-bottom:-10px;
+}
+.portfolioImg
+{
+  height: '250px' !important;
+  width: '400px' !important;
 }
 .protfolio .container {
 	padding-top:85px;
