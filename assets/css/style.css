@@ -2926,7 +2926,9 @@ dl.hiw {
 @media (max-width: 1024px) {
   .nav > li > a {
     padding: 10px 10px; } }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+  @media only screen and (max-width: 600px){
+    /* @media (min-width: 600px) and (max-width: 768px) { */
   .navbar-toggle {
     clear: left;
     float: right; }
@@ -2946,7 +2948,7 @@ dl.hiw {
     display: none; }
 
     #description{
-      height:210px;
+      height:210px !important;
       overflow:hidden;
       position: relative;
       padding-right:50px;
