@@ -150,7 +150,7 @@ const loadPortfolio = () => {
                         </a>
                       </span> 
                     </span> 
-                  <img src={categories.stack == 'fullstack' ? fullStackImages() : (categories.stack == 'backend' ? backEndImages() : frontEndImages())}  className='portfolioImg img-fluid' alt="" />
+                  <img src={categories.stack == 'fullstack' ? fullStackImages() : (categories.stack == 'backend' ? backEndImages() : frontEndImages())} style={{ height:'250px', width:'400px'  }} className="img-fluid" alt="" />
                 </div>
               </li> 
       )
