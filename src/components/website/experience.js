@@ -10,13 +10,6 @@ export default function Experience() {
     const [isSuccess, setIsSuccess] = useState(false);
 	const [isError, setIsError] = useState(false);
 
-
-    //   useEffect(() => {
-		
-    //     getExperience()
-
-    //     }, []);
-
         useEffect(() => {
             let isMounted = true;    
             getExperience();
@@ -97,8 +90,6 @@ const loadExperience = () => {
                 <div className="container">
                 <div className="heading">
                     <div className="section-heading text-center font__color-2">MY <span className="font__color-1">Work Experience</span></div>
-
-                    {/* <p>Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p> */}
                 </div>
                         {loadExperience()}
                 </div>

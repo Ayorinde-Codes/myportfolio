@@ -2956,7 +2956,7 @@ dl.hiw {
     }
     
     .portfolioImg {
-      height: '150px' !important;
+      height: '140px' !important;
       width: '300px' !important;
     }
     
@@ -2964,6 +2964,10 @@ dl.hiw {
     position: static;
     margin-bottom: 20px; } }
 @media (max-width: 767px) {
+  .portfolioImg {
+    height: '140px' !important;
+    width: '300px' !important;
+  }
   .navbar-main {
     background-color: #ffffff;
     position: fixed;

@@ -81,7 +81,7 @@ const getRandomItem = (arr) => {
 
   // get random item
   const item = arr[randomIndex];
-
+console.log(item)
   return item;
 }
 
@@ -138,21 +138,21 @@ const loadPortfolio = () => {
 
   return portfolio && portfolio.map(({ id, name, category_id, stack, description, year_from, year_to, url, is_completed, categories  }) => {
       return (        
-              <li key={index++} className={`${categories.stack} col-xs-6 col-sm-4 col-md-3 col-lg-3 addSpacingPortfolio`}>
-                <div className="lightCon"> 
-                  <span className="hoverBox"> 
-                    <span className="smallIcon">
-                        <a className="zoom lb lb_warsaw1" data-toggle="modal" data-target="#portfolioModal">
-                          <i className="fa fa-search fa-2x" onClick={() =>loadModal(name, stack, description, year_from, year_to, url, is_completed, categories)}></i> 
-                        </a>
-                        <a href={url ? url : '#'} title="Project Link" target="_blank" className="linKed">
-                          <i className="fa fa-link fa-2x"></i>
-                        </a>
-                      </span> 
-                    </span> 
-                  <img src={categories.stack == 'fullstack' ? fullStackImages() : (categories.stack == 'backend' ? backEndImages() : frontEndImages())} style={{ height:'250px', width:'400px'  }} className="img-fluid" alt="" />
-                </div>
-              </li> 
+          <li key={index++} className={`${categories.stack} col-xs-6 col-sm-4 col-md-3 col-lg-3 addSpacingPortfolio`}>
+            <div className="lightCon"> 
+              <span className="hoverBox"> 
+                <span className="smallIcon">
+                    <a className="zoom lb lb_warsaw1" data-toggle="modal" data-target="#portfolioModal">
+                      <i className="fa fa-search fa-2x" onClick={() =>loadModal(name, stack, description, year_from, year_to, url, is_completed, categories)}></i> 
+                    </a>
+                    <a href={url ? url : '#'} title="Project Link" target="_blank" className="linKed">
+                      <i className="fa fa-link fa-2x"></i>
+                    </a>
+                  </span> 
+                </span> 
+                  <img className="img-fluid" src={categories.stack == 'fullstack' ? fullStackImages() : (categories.stack == 'backend' ? backEndImages() : frontEndImages())} style = {{ height:'145px', width:'250px'}}  alt="" />
+             </div>
+          </li>
       )
   })
 }
@@ -177,9 +177,8 @@ const loadModal = (name, stack, description, year_from, year_to, url, is_complet
                     </ul>
                   </section>
                 </div>
-                <br />
 
-                  <ul className="portfolioContainer row gallery">
+                  <ul className="portfolioContainer gallery">
                     {loadPortfolio()}
                   </ul>
               </div>
@@ -197,7 +196,7 @@ const loadModal = (name, stack, description, year_from, year_to, url, is_complet
                       <p> <b> Name : </b>  {singlePortfolio[0]== undefined ?'' :singlePortfolio[0].name}</p>
                       <p> <b> Stack : </b> {singlePortfolio[0]== undefined ?'' :singlePortfolio[0].stack}</p>
                       <p> <b> Project Description : </b> {singlePortfolio[0]== undefined ?'' :singlePortfolio[0].description}</p>
-                      <p> <b> Status : </b> {singlePortfolio[0]== undefined ?'' : (singlePortfolio[0].is_completed ? 'Completed' : 'On-going' )}</p>
+                      <p> <b> Status : </b> {}</p>
                     </div>
                     <div className="modal-footer">
                       {singlePortfolio[0]== undefined ? '' : (singlePortfolio[0].url ?  <a href={singlePortfolio[0].url} target="_blank" type="button" className="btn btn-primary btn-sm" > View </a> : '' )}
