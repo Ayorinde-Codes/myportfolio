@@ -18,9 +18,9 @@ export default function AboutMe() {
                     
                     <div id="description">
                         <p> 
-                            A versatile, resourceful, result-oriented software enthusiast with 5+ years work experience participating 
-                            in the complete product development lifecycle of successfully launched applications and contributing constructively 
-                            to the status quo of the industry by way of research and development.
+                            I am a versatile, resourceful, result-oriented software enthusiast with 5+ years of work experience. 
+                            I've successfully launched full applications so I understand how to effectively contribute to the entire product development lifecycle. 
+                            My passion for technology extends beyond basic development and into the realm of research and contributing to the cutting edge of web 3.0
                         </p> 
                     </div> 
                     <a href="/assets/ayorindeCV.pdf" download="ayorindeCV" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
