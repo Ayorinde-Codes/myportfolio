@@ -23,7 +23,7 @@ export default function AboutMe() {
                             My passion for technology extends beyond basic development and into the realm of research and contributing to the cutting edge of web 3.0
                         </p> 
                     </div> 
-                    <a href="/assets/Ayorinde_Akindemowo_cv.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
+                    <a href="/assets/Ayorinde_Akindemowo_CV.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
                 </div>
                 </div>
             </section>
