@@ -2948,16 +2948,16 @@ dl.hiw {
     display: none; }
 
     #description{
-      height:210px !important;
+      height:100% !important;
       overflow:hidden;
       position: relative;
       padding-right:50px;
-      margin-bottom:60px;
+      /* margin-bottom:10px; */
     }
     
     .portfolioImg {
-      height: '140px' !important;
-      width: '300px' !important;
+      height: 140px !important;
+      width: 300px !important;
     }
     
   .full-height-spacer .section-heading {
@@ -2965,8 +2965,8 @@ dl.hiw {
     margin-bottom: 20px; } }
 @media (max-width: 767px) {
   .portfolioImg {
-    height: '140px' !important;
-    width: '300px' !important;
+    height: 140px !important;
+    width: 300px !important;
   }
   .navbar-main {
     background-color: #ffffff;
@@ -3051,13 +3051,13 @@ about me
 	padding-left:48px;
 	}
 .aboutme .proPic img{
-	min-width:100%;
-	min-height:100% !important;
+	/* min-width:100%;
+	min-height:100% !important; */
 	height:650px;
 	
-	/*width:auto;
-	height:auto;
-	display:block;*/
+	width:auto;
+	/* height:auto; */
+	display:block;
 }
 .aboutme .proPic{
 	position:relative;
@@ -3066,11 +3066,11 @@ about me
 	overflow:hidden;
 }
 #description{
-	height:172px;
+	height:100%;
 	overflow:hidden;
 	position: relative;
 	padding-right:50px;
-	margin-bottom:60px;
+	/* margin-bottom:10px; */
 }
 #description .ps-scrollbar-x-rail{
 	display:none !important;
@@ -3106,8 +3106,8 @@ about me
 }
 .aboutme .heading {
 	text-align:left;
-	padding-top:78px;
-	padding-bottom:22px;
+	padding-top:70px;
+	padding-bottom:20px;
 }
 .aboutme .heading h2{
 	/* color:#5b4c5c;	 */
@@ -3123,7 +3123,7 @@ about me
 	}
 
   .aboutme p{
-    font-size:16px;
+    font-size:15px;
     }
 
 .aboutme .subHeading{
@@ -3131,8 +3131,16 @@ about me
 	}
 
   @media screen and (max-width: 992px) {
+    
+    #description{
+      height: 100% !important;
+      overflow:hidden;
+      position: relative;
+      /* padding-right:50px; */
+      /* margin-bottom:100px; */
+    }
     .aboutme{
-      padding:15px;
+      /* padding:8px; */
     }
     .proPic img{
       margin:0 auto;
