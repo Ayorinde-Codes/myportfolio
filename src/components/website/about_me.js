@@ -18,12 +18,15 @@ export default function AboutMe() {
                     
                     <div id="description">
                         <p> 
-                            My name is Ayorinde. I am a versatile, resourceful, result-oriented software enthusiast with 5+ years of work experience building commercial software products using modern web technologies.
-                            I have successfully launched full applications in different niches including but not limited to e-commerce, medicine, Fintech, Real Estate etc. so I understand how to effectively contribute to the entire product development lifecycle. 
-                            My passion for technology extends beyond basic development and into the realm of research and contributing to the cutting edge of web 3.0.
+                            I am a seasoned developer with over six years of experience in building robust and scalable software solutions.
+                            My expertise spans both backend and frontend development, allowing me to contribute effectively to various aspects
+                            of a project's lifecycle. I have a proven track record of delivering high-performance applications in industries
+                            such as e-commerce, Financial Technology (FINTECH), software as a service (SAAS), medical technology, real estate,
+                            and healthcare. My technical proficiency, coupled with a passion for pushing the boundaries of technology, enables
+                            me to craft innovative solutions that meet clients' evolving needs.
                         </p> 
                     </div> 
-                    <a href="/assets/Ayorinde_Akindemowo_-CV.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
+                    <a href="/assets/Ayorinde_Akindemowo_Resumé.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
                 </div>
                 </div>
             </section>
