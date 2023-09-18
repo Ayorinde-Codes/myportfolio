@@ -26,7 +26,6 @@
     "react-dom": "^17.0.1",
     "react-modal": "^3.12.1",
     "react-moment": "^1.1.1",
-    "react-paginate": "^6.3.2",
     "react-particles-js": "^3.3.0",
     "react-redux": "5.0.7",
     "react-responsive-carousel": "^3.1.41",
@@ -71,6 +70,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.12.7",
     "babel-loader": "^8.2.1",
