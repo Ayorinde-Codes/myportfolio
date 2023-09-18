@@ -26,7 +26,7 @@ export default function AboutMe() {
                             me to craft innovative solutions that meet clients' evolving needs.
                         </p> 
                     </div> 
-                    <a href="/assets/Ayorinde_Akindemowo_Resumé.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
+                    <a href="/assets/Ayorinde_Akindemowo_Resume.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
                 </div>
                 </div>
             </section>
