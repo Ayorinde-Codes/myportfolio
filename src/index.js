@@ -13,3 +13,21 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+// import React from "react";
+// import ReactDOM from 'react-dom';
+// import { createRoot } from "react-dom/client";
+// import App from "./App";
+
+// const container = document.getElementById("root");
+// const root = createRoot(container);
+
+// root.render(<App tab='home' />);
+
+
+// import { createRoot } from "react-dom/client";
+// import Hello from "./Hello";
+
+// const container = document.getElementById("root");
+// const root = createRoot(container);
+// root.render(<Hello />);

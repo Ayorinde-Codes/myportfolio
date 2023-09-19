@@ -3,15 +3,26 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import AboutMe from "./components/website/about_me";
 import Contact from "./components/website/contact";
 import Index from "./components/website";
-import PrivateRoute from './PrivateRoute';
-import Header from './components/website/header';
+// import PrivateRoute from './PrivateRoute';
+// import Header from './components/website/header';
 import Skill from "./components/website/skill";
 import Experience from "./components/website/experience";
 import Education from "./components/website/education";
 import Portfolio from "./components/website/portfolio";
 import Testimonial from "./components/website/testimonial";
 import Notfound from "./components/notfound";
-import Login from "./components/dashboard/login";
+
+// import React from "react";
+// import "./App.css";
+// const App = () => {
+//   return (
+//     <div>
+//       <h1 className='heading__one'>React application!!!</h1>
+//     </div>
+//   );
+// };
+
+// export default App;
 
 export default function App() {
 
@@ -32,7 +43,6 @@ export default function App() {
         <Route path="/testimonial" component={Testimonial} /> 
         <Route path="/contact" component={Contact} /> 
         {/* <PrivateRoute path="/dashboard" component={ Dashboard} /> */}
-        <Route path="/login" component={Login} /> 
         <Route path="*" component={Notfound} />
 
       </Switch>
