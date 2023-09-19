@@ -1,0 +1,45 @@
+$font_1 : 'Raleway', sans-serif;;
+$font_2 : 'Merriweather', serif;
+$font_3 : 'Yellowtail', cursive;
+$font_4 : 'Oswald', sans-serif;
+$font_icon: FontAwesome;
+
+$black_1: #666666;
+$black_2: #999999;
+$black_3: #222222; // body
+$blue_1: #041e42;
+$blue_2: #46c2ca;
+$blue_3: #eff3f6;
+$red: #ed1c24;
+$white: #ffffff;
+
+// Global
+$color_1: #ffc600;
+$color_2: #000000;
+$color_3: #000000;
+$color_4: $blue_3;
+
+// Fonts
+$font__body-color: $black_3;
+$font__topbar-color: $white;
+$font__topbar-nav-color: $white;
+$font__topbar-nav-hover-color: $color_1;
+$font__navbar-color: $black_3;
+$font__navbar-hover-color: $white;
+$font__navbar-active-color: $white;
+
+// Background
+$bg__topbar: $color_1;
+
+.bolder{
+	font-weight: 600;
+}
+
+.cfix{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+@import "mixin.scss";

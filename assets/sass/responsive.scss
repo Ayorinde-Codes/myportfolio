@@ -1,0 +1,84 @@
+
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 1024px) {
+	
+	.nav > li > a {
+	    padding: 10px 10px;
+	}
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+	.navbar-toggle{
+		clear: left;
+	    float: right;
+	}
+	.navbar-main .nav li a {
+	    padding: 24px 8px;
+	}
+	.nav > li > a {
+	    padding: 10px 6px;
+	}
+
+	.jumbotron {
+	    padding: 40px 0;
+	    .type-headings{
+			font-size: 24px;		
+	    }
+	}
+	.side-link{
+		display: none;
+	}
+	.full-height-spacer .section-heading {
+    	position: static;
+    	margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.navbar-main{ 
+        background-color: $white;
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		.navbar-brand{
+			top: 3px;
+		    position: absolute;
+			> img{
+				width: 60%
+			}
+			img{
+		        display: none;
+		        &:last-child{
+		          display: block;
+		        }
+	      	}
+		}
+		.dropdown-menu > li a{
+			color: $black_3;
+		}
+		.nav > li > a {
+		    padding: 10px 25px;
+		}
+	}
+
+	.quote-left{
+		display: none;
+	}
+
+	
+}
+
+@media (max-width: 479px) {
+
+	
+}

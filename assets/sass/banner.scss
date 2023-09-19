@@ -1,0 +1,18 @@
+.banner{
+	padding: 0 0;
+	ol li, ul li{
+		margin: 0;
+	}
+}
+.wrap-caption{
+	padding-top: 100px;
+	color: $white;
+	width: 50%;
+	.excerpt{
+		margin-bottom: 50px;
+	 	font-size: 18px;
+	}
+	.btn{
+		margin-right: 15px;
+	}
+}
