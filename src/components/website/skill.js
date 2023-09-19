@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link, Redirect } from 'react-router-dom';
-import { Card, Logo, Form, Success, Input, Button, Error } from "../../components/dashboard/AuthForms";
 import DataService from "../dashboard/services/Service";
 
 export default function Skill() {

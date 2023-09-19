@@ -1,15 +1,8 @@
 {
-"presets": [
-    ["env", {
-        "modules": false,
-        "targets": {
-          "chrome": "60",
-          "edge": "60",
-          "node": "current"
-        }
-      }],
+  "presets": [
     "@babel/preset-env",
-    "@babel/preset-react"
-],
-"plugins": [
-"@babel/plugin-proposal-object-rest-spread"]}
+    ["@babel/preset-react", {
+    "runtime": "automatic"
+  }]
+  ]
+}
