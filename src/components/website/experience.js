@@ -63,9 +63,9 @@ const loadExperience = () => {
                         <div className="exCon">
                             <h4>{company_name}</h4>
                             <h5>{role}</h5>
-                            <p>
+                            {/* <p>
                                 {description}
-                            </p>
+                            </p> */}
                             <ul> 
                                 {duties && duties.map((data, index)=> {
                                     return (
