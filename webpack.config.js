@@ -1,25 +1,13 @@
 const path = require('path');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: ['./src/index.js'],
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: __dirname,
+    publicPath: '/',
     filename: 'bundle.js'
-  },
-  devtool: "source-map",
-  plugins: [
-    new Dotenv({
-      systemvars: true
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "public", "index.html"),
-      // template: "src/index.html",
-    })
-  ],
-  devServer: {
-    port: 3030, // you can change the port
   },
   module: {
     rules: [
@@ -41,46 +29,26 @@ module.exports = {
       },
     ],
   },
+  // devServer: {
+  //   historyApiFallback: true,
+  //   contentBase: './',
+  //   watchOptions: {
+  //     aggregateTimeout: 300,
+  //   poll: 1000
+  // }
+  // },
+  plugins: [
+    new Dotenv({
+      systemvars: true
+    }),
+    new HtmlWebPackPlugin({
+      template: "./index.html",
+      filename: "./index.html"
+    })
+  ],
   resolve: {
     extensions: ["*", ".js", ".jsx"],
   },
 };
 
-// module.exports = {
-//   entry: './src/index.js',
-//   output: {
-//     path: path.resolve(__dirname, 'build'),
-//     publicPath: '/',
-//     filename: 'bundle.js'
-//   },
-//   module: {
-//     rules: [
-//       {
-//         test: /\.?js$/,
-//         exclude: /node_modules/,
-//         use: {
-//           loader: "babel-loader",
-//           options: {
-//             presets: ["@babel/preset-env", "@babel/preset-react"],
-//           },
-//         },
-//       },
-//       {
-//         test: /\.css$/,
-//         use: [
-//           "style-loader",
-//           "css-loader", // for styles
-//         ],
-//       },
-//     ],
-//   },
 
-//   plugins: [
-//     new Dotenv({
-//       systemvars: true
-//     }),
-//     new HtmlWebpackPlugin({
-//       template: path.join(__dirname, "public", "index.html"),
-//     })
-//   ],
-// };
