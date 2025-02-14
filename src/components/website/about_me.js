@@ -18,15 +18,16 @@ export default function AboutMe() {
                     
                     <div id="description">
                         <p> 
-                            I am a seasoned developer with over six years of experience in building robust and scalable software solutions.
-                            My expertise spans both backend and frontend development, allowing me to contribute effectively to various aspects
-                            of a project's lifecycle. I have a proven track record of delivering high-performance applications in industries
-                            such as e-commerce, Financial Technology (FINTECH), software as a service (SAAS), medical technology, real estate,
-                            and healthcare. My technical proficiency, coupled with a passion for pushing the boundaries of technology, enables
-                            me to craft innovative solutions that meet clients' evolving needs.
-                        </p> 
+                            I am a seasoned developer with over seven years of experience building robust and scalable software
+                            solutions. My expertise spans both backend and frontend development, allowing me to contribute
+                            effectively to various aspects of a project's lifecycle. I have a proven track record of delivering
+                            high-performance applications in industries such as e-commerce, Financial Technology (FINTECH),
+                            software as a service (SAAS), medical technology, real estate, and healthcare. My technical proficiency,
+                            coupled with a passion for pushing the boundaries of technology, enables me to craft innovative
+                            solutions that meet clients' evolving needs.
+                        </p>
                     </div> 
-                    <a href="/assets/Ayorinde_Akindemowo_cv-Resume.pdf" download="Ayorinde_Akindemowo_cv" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
+                    <a href="/assets/Ayorinde-Akindemowo-Resume.pdf" download="Ayorinde_Akindemowo_Resume" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
                 </div>
                 </div>
             </section>
