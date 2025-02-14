@@ -3051,9 +3051,9 @@ about me
 	padding-left:48px;
 	}
 .aboutme .proPic img{
-	/* min-width:100%;
-	min-height:100% !important; */
-	height:650px;
+	min-width:100%;
+	min-height:100% !important;
+	/* height:auto; */
 	
 	width:auto;
 	/* height:auto; */
