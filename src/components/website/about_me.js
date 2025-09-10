@@ -29,7 +29,7 @@ export default function AboutMe() {
                                 solutions that meet clients' evolving needs.
                             </p>
                         </div> 
-                        <a href="/assets/Ayorinde-Akindemowo-Resume.pdf" download="Ayorinde_Akindemowo_Resume" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
+                        <a href="/assets/Ayorinde_Akindemowo__Resume.pdf" download="Ayorinde_Akindemowo_Resume" className="bntDownload" style={{ textDecoration: 'none' }}>Download Resume</a> </div>
                     </div>
                 </div>
             </section>
